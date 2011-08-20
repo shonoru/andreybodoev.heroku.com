@@ -47,10 +47,80 @@ table {
 	border-spacing: 0;
 }
 
-body { font-size:100%; line-height:1.25; text-align:center; }
-#page { margin:0 auto; border:1px solid #fff; width:40.5em; min-height:57.2756em; }
-#textblock { margin: 2.12501em 9em 9em 4.5em; }
+body { font-size:100%; line-height:1.25; text-align:left; }
+
+a:link{color:#0055CC}
+a:hover{color:#CC0000}
+a:visited{color:#990099}
+a:visited:hover{color:#CC0000}
+a:focus{outline:none}
+
+#page {
+	margin:0 auto;
+	width:80%;
+}
+
+footer {
+	clear: both;
+	margin: 0 auto;
+	width: 80%;
+	border-top: 1px solid #555;
+	padding-top: 0.5em;
+	padding-bottom: 1em;
+}
+
+/*#page { margin:0 auto; border:1px solid #fff; width:40.5em; min-height:57.2756em; }
+#textblock { margin: 2.12501em 9em 9em 4.5em; }*/
 h1, h2, h3 { margin-top:0; margin-bottom:0; }
 h1 { font-size:1.5em; padding:1.45833em 0; }
 h2 { font-size:1.33333em; padding:1.25em 0; }
 h3 { font-size:1.16667em; padding:1.51786em 0; }
+#main ul {
+	list-style: square;
+	margin-left:2em;
+}
+
+#qr {
+/*	background-color: #cccc00;
+*/}
+#qr img {
+/*	margin-left: -1.6em;*/
+}
+#main {
+	width: 61.8%;
+	float: left;
+	padding-bottom: 2em;
+	
+}
+#side {
+	margin-left: 61.8%;
+}
+#side .content {
+/*	background-color: #cc0000;
+*/	padding-top: 7.5em;
+}
+.pdf {
+	font-style: italic;
+}
+/* TODO rework */
+sup {
+	vertical-align: super;
+	font-size: smaller;
+	font-style: italic;
+}
+footer {
+	text-align: center;
+}
+#toc {
+}
+#toc .content {
+}
+#toc ul {
+	
+}
+#copyright {
+	
+}
+#copyright small {
+	font-size: smaller;
+}
