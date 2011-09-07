@@ -47,7 +47,12 @@ table {
 	border-spacing: 0;
 }
 
-body { font-size:100%; line-height:1.25; text-align:left; }
+body { 
+	font-family: 'PT Serif', 'Georgia', serif;
+	font-size:100%; 
+	line-height:1.25; 
+	text-align:left; 
+}
 
 a:link{color:#0055CC}
 a:hover{color:#CC0000}
