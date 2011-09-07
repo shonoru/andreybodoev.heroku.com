@@ -53,7 +53,12 @@ body {
 	line-height:1.25; 
 	text-align:left; 
 }
-
+p {
+	font-size: 1em;
+}
+.paragraph {
+	margin-top: 1.375em;
+}
 a:link{color:#0055CC}
 a:hover{color:#CC0000}
 a:visited{color:#990099}
