@@ -1,6 +1,4 @@
 Andreybodoev::Application.routes.draw do
-  # get "main/index"
-
   root :to => "main#index"
   match "resume" => "resume#index"
   

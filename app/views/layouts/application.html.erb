@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Andrey Bodoev</title>
 	<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
-	<%= stylesheet_link_tag :all %>
+	<%= stylesheet_link_tag "style" %>
 	<%= csrf_meta_tag %>
 	<% unless params["controller"] == "resume"%>
 	<script type="text/javascript">
@@ -51,7 +51,7 @@
 			</small>
 		</div>
 	</footer>
-	<!-- %= debug(params) if Rails.env.development? % -->
+	<%= debug(params) if Rails.env.development? %>
 	<% unless params["controller"] == 'resume' %>
 	<!-- Yandex.Metrika counter -->
 	<div style="display:none;"><script type="text/javascript">
