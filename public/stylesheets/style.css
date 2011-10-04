@@ -100,7 +100,9 @@ h3 { font-size:1.16667em; padding:1.51786em 0; }
 	width: 61.8%;
 	float: left;
 	padding-bottom: 2em;
-	
+}
+.main {
+	text-align: center;
 }
 #side {
 	margin-left: 61.8%;

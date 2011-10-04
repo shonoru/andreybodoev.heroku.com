@@ -1,6 +1,9 @@
 Andreybodoev::Application.routes.draw do
-  root :to => "resume#index"
+  # get "main/index"
 
+  root :to => "main#index"
+  match "resume" => "resume#index"
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

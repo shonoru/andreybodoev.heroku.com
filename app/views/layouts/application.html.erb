@@ -2,10 +2,11 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
-	<title>Andrey Bodoev — Résumé</title>
+	<title>Andrey Bodoev</title>
 	<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
 	<%= stylesheet_link_tag :all %>
 	<%= csrf_meta_tag %>
+	<% unless params["controller"] == "resume"%>
 	<script type="text/javascript">
 
 	  var _gaq = _gaq || [];
@@ -19,10 +20,39 @@
 	  })();
 
 	</script>
+	<% end %>
 </head>
 <body>
 	<!-- frappuccino, lingonberry jam -->
+	<div id="page">
 	<%= yield %>
+	</div>
+	<footer>
+		<div id="toc">
+			<div class="content">
+				<h3>Table of Contents</h3>
+				<ul>
+					<li>Main page</li>
+					<!-- <li>Resume</li> -->
+					<li><a href="http://shonoru.tadalist.com/lists/2006813/public">Bookshelf</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="qr">
+			<img src="https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=Andrey%20Bodoev.%20Web%20developer.%20Drop%20me%20a%20line:%20andreybodoev@gmail.com&choe=UTF-8" alt="Andrey Bodoev" />
+		</div>
+		<div id="copyright">
+			<small>
+				&copy; 2011 Andrey Bodoev. This site was made by Hypnotoad
+			</small>
+			<br />
+			<small>
+				Drop me a line: <a href="mailto:andreybodoev@gmail.com">andreybodoev@gmail.com</a>
+			</small>
+		</div>
+	</footer>
+	<!-- %= debug(params) if Rails.env.development? % -->
+	<% unless params["controller"] == 'resume' %>
 	<!-- Yandex.Metrika counter -->
 	<div style="display:none;"><script type="text/javascript">
 	(function(w, c) {
@@ -36,6 +66,7 @@
 	</script></div>
 	<script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript" defer="defer"></script>
 	<noscript><div><img src="//mc.yandex.ru/watch/9717811" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-	<!-- /Yandex.Metrika counter -->
+	<!-- /Yandex.Metrika counter -->		
+	<% end %>
 </body>
 </html>
