@@ -85,7 +85,7 @@ h1, h2, h3 { margin-top:0; margin-bottom:0; }
 h1 { font-size:1.5em; padding:1.45833em 0; }
 h2 { font-size:1.33333em; padding:1.25em 0; }
 h3 { font-size:1.16667em; padding:1.51786em 0; }
-#main ul {
+.resume ul {
 	list-style: square;
 	margin-left:2em;
 }
@@ -117,8 +117,7 @@ h3 { font-size:1.16667em; padding:1.51786em 0; }
 /* TODO rework */
 sup {
 	vertical-align: super;
-	font-size: smaller;
-	font-style: italic;
+	font-size: small;
 }
 footer {
 	text-align: center;
@@ -135,4 +134,26 @@ footer {
 }
 #copyright small {
 	font-size: smaller;
+}
+#main .content {
+	margin-right: 1em;
+}
+.fact {
+	background-color: #eee;
+	color: #000;
+}
+.fact .fact-content {
+	margin: 0 1em;
+	padding-bottom: 0.5em;
+}
+.fact .fact-content em {
+	font-style: italic;
+}
+
+#main li {
+/*	padding-bottom: 0.33em;*/
+}
+
+#side .content .image {
+	text-align: left;
 }
