@@ -157,3 +157,8 @@ footer {
 #side .content .image {
 	text-align: left;
 }
+
+h1 sup {
+	position:absolute;
+	margin-left:.5em;
+}
