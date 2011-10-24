@@ -32,9 +32,20 @@
 			<div class="content">
 				<h3>Table of Contents</h3>
 				<ul>
-					<li>Main page</li>
-					<!-- <li>Resume</li> -->
-					<li><a href="http://shonoru.tadalist.com/lists/2006813/public">Bookshelf</a></li>
+					<li>
+						<% if params["controller"] == 'main' %>
+							Main page
+						<% else %>
+							<%= link_to 'Main page', :root %>
+						<% end %>
+					</li>
+					<li>
+					<% if params["controller"] == 'bookshelf' %>
+						Bookshelf
+					<% else %>
+						<%= link_to 'Bookshelf', bookshelf_path %>
+					<% end %>
+					</li>
 				</ul>
 			</div>
 		</div>
