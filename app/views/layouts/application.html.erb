@@ -3,8 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Andrey Bodoev</title>
+	<%= raw show_navigation %>
 	<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
 	<%= stylesheet_link_tag "style" %>
+	<%= javascript_include_tag "navigate.js"%>
 	<%= csrf_meta_tag %>
 	<% unless params["controller"] == "resume"%>
 	<script type="text/javascript">
@@ -25,6 +27,7 @@
 <body>
 	<!-- frappuccino, lingonberry jam -->
 	<div id="page">
+		<div style="position: absolute; ">Ctrl <img src="/images/arrows.gif" alt="For navigate you can use Ctrl↓Down↓↑↑ or Ctrl↓Up↓↑↑" /></div>
 	<%= yield %>
 	</div>
 	<footer>
@@ -60,11 +63,17 @@
 						<% end %>
 					</li>
 					<li>
+						<% if params["controller"] == "travel" %>
+						<strong>
 						Travel
+						</strong>
+						<% else %>
+							<%= link_to "Travel", travel_path %>
+						<% end %>  
 					</li>
-					<li>
+					<!-- <li>
 						Archive
-					</li>
+					</li> -->
 				</ul>
 			</div>
 		</div>
