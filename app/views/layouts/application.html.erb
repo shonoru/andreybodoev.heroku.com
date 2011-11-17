@@ -34,17 +34,36 @@
 				<ul>
 					<li>
 						<% if params["controller"] == 'main' %>
+						<strong>
 							Main page
+						</strong>
 						<% else %>
 							<%= link_to 'Main page', :root %>
 						<% end %>
 					</li>
 					<li>
 					<% if params["controller"] == 'bookshelf' %>
+						<strong>
 						Bookshelf
+						</strong>
 					<% else %>
 						<%= link_to 'Bookshelf', bookshelf_path %>
 					<% end %>
+					</li>
+					<li>
+						<% if params["controller"] == "use" %>
+						<strong>
+						Use
+						</strong>
+						<% else %>
+						  <%= link_to "Use", use_path %>
+						<% end %>
+					</li>
+					<li>
+						Travel
+					</li>
+					<li>
+						Archive
 					</li>
 				</ul>
 			</div>

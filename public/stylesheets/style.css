@@ -138,6 +138,15 @@ footer {
 #main .content {
 	margin-right: 1em;
 }
+#main .content .content-image {
+	padding-bottom: 2em;
+}
+#main .content .content-image img {
+	margin-left: -2em;
+}
+#main .content .content-image .ci-comment {
+	font-style: italic;
+}
 .fact {
 	background-color: #eee;
 	color: #000;
@@ -161,4 +170,16 @@ footer {
 h1 sup {
 	position:absolute;
 	margin-left:.5em;
+}
+
+/* bookshelf */
+.completed {
+	color: #333;
+	font-size: .9em;
+}
+small {
+	font-size: smaller;
+}
+strong {
+	font-weight: bolder;
 }
