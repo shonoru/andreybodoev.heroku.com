@@ -6,13 +6,13 @@ module ApplicationHelper
       html = '<link id="DownLink" href="/bookshelf/" />'
     end
     if params["controller"] == "bookshelf"
-      html = '<link id="UpLink" href="/" /><link id="DownLink" href="/use/" />'
+      html = '<link id="UpLink" href="/" /><link id="DownLink" href="/travel/" />'
     end
-    if params["controller"] == "use"
-      html = '<link id="UpLink" href="/bookshelf/" /><link id="DownLink" href="/travel/" />'
-    end
+    # if params["controller"] == "use"
+    #   html = '<link id="UpLink" href="/bookshelf/" /><link id="DownLink" href="/travel/" />'
+    # end
     if params["controller"] == "travel"
-      html = '<link id="UpLink" href="/use/" />'
+      html = '<link id="UpLink" href="/bookshelf/" />'
     end
     html
   end

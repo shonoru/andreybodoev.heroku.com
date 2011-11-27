@@ -4,7 +4,7 @@ Andreybodoev::Application.routes.draw do
   root :to => "main#index"
   match "resume" => "resume#index"
   match "bookshelf" => "bookshelf#index"  
-  match "use" => "use#index"  
+  # match "use" => "use#index"  
   match "travel" => "travel#index"
   
   # The priority is based upon order of creation:
